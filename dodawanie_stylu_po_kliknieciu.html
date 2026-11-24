@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+        .id { color: blue }
+    </Style>
+
+</head>
+
+<body>
+    
+    <h1 onclick="changeText(this);">
+        Kliknij w tekst
+    </h1>
+
+    <div id="box"></div>
+
+    <script>
+    
+        function changeText(id){
+        
+id.classList.add('h1');
+    box.appendChild(akapit);
+   
+            const box = document.querySelector('#box');
+            const akapit = document.createElement('p');
+            akapit.innerHTML = "To jest nowy akapit";
+            
+            box.appendChild(akapit);
+        }
+    </Script>
+</body>
+</html>

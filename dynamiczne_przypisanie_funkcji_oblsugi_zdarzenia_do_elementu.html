@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton"> Wyswietl date</button>
+    <p id="demo"> </p>
+
+    <Script>
+        document.querySelector("#myButton").onclick=displayDate;
+        function displayDate(){
+            document.querySelector("#demo").innerHTML=Date();
+        
+        }
+    </Script>
+    
+</body>
+</html>

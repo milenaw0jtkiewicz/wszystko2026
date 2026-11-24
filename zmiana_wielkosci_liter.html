@@ -1,0 +1,24 @@
+//Napisz skrypt, który skopiuje wpisany tekast do drugiego pola i wyswietli je duzymi literami
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Wpisz swoje imię</p>
+    <input type="text" id="fname" onchange="myFunction()"><br>
+    <input type="text" id="wynik">
+
+    <script>
+        function myFunction() {
+            let x = document.querySelector("#fname");
+            let y = document.querySelector("#wynik");
+            y.value = x.value.toUpperCase();
+        }
+    </script>
+</body>
+</html>
+
